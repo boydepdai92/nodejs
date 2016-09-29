@@ -20,3 +20,18 @@ function factorial(n) {
     }
 }
 console.log(factorial(4));
+function fact(n) {
+    if (typeof n != 'number') {
+        return NaN;
+    }
+    if (n === parseInt(n)) {
+        if (n <= 1) {
+            return 1;
+        } else {
+            return n * fact(n-1);
+        }
+    } else {
+        return NaN;
+    }
+}
+console.log(fact(4));
